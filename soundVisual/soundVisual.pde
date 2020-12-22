@@ -9,8 +9,7 @@ float spin = 0.1;
  
 //MAIN SETUP
 void setup () {
-  size(600,600);
-  noCursor();
+  size(1680,1050);
   smooth();
   background (0);
   frameRate(24);
@@ -45,6 +44,6 @@ void draw () {
     fill(#bbe1fa);
     ellipse(x3, y3, song.right.get(i)*30, song.right.get(i)*30);
   }
-  spin+=0.1;
+  //spin+=0.1;
   
 }
