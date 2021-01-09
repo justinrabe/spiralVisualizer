@@ -41,8 +41,10 @@ void draw () {
     ellipse(x, y, song.left.get(i)*30, song.left.get(i)*30);
     fill(#3282b8);
     ellipse(x2, y2, song.right.get(i)*30, song.right.get(i)*30);
-    fill(#bbe1fa);
-    ellipse(x3, y3, song.right.get(i)*30, song.right.get(i)*30);
+    if (song.bufferSize() < 512) {
+      fill(#bbe1fa);
+      ellipse(x3, y3, song.right.get(i)*30, song.right.get(i)*30);
+    }
   }
   //spin+=0.1;
   
